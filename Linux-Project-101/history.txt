@@ -1,0 +1,87 @@
+    1  echo $UID
+    2  vi user.sh
+    3  chmod +x user.sh
+    4  ./user.sh
+    5  sudo sh user.sh
+    6  vi user.sh
+    7  sudo sh user.sh
+    8  vi user.sh
+    9  sudo sh user.sh
+   10  vi user.sh
+   11  sudo sh user.sh
+   12  sudo user0001
+   13  sudo - user0001
+   14  sudo -user0001
+   15  sudo su user0001
+   16  whoami
+   17  cat event_history.csv | wc -l
+   18  cat event_history.csv | wc -l |grep "serdar"
+   19  cat event_history.csv | wc -l | grep "serdar"
+   20  cat event_history.csv | grep "serdar"
+   21  cat event_history.csv | grep "serdar" | grep -i "terminate"
+   22  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -o "i-0c127ab5cdf997cf4"
+   23  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d ':' -f2 | grep-oE 'i\-[a-z0-9]{17}'
+   24  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d ':' -f2 | grep-o'i\-[a-z0-9]{17}'
+   25  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d ':' -f2 | grep -o'i\-[a-z0-9]{17}'
+   26  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d ':' -f2 | grep -o'i-[a-z0-9]{17}'
+   27  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d ':' -f2 | grep -o'i[a-z0-9]{17}'
+   28  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d ':' -f2 | grep -o 'i[a-z0-9]{17}'
+   29  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d, -f1,4,10
+   30  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d, -f10
+   31  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d: -f10
+   32  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d, -v "recource" -f10
+   33  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d,-f10
+   34  cat event_history.csv | grep "serdar" | grep -i "terminate" | cut -d, -f10
+   35  awk {print $10} event_history.csv
+   36  awk {print$10} event_history.csv
+   37  awk {print 10} event_history.csv
+   38  awk {print $10} event_history.csv
+   39  awk /serdar/ '{print $10}' event_history.csv
+   40  awk /serdar/'{print $10}' event_history.csv
+   41  awk '/serdar/ {print 1,9} event_history.csv
+   42  awk '/serdar/ {print 1,9}' event_history.csv
+   43  awk '/serdar/ {print 1,9}' event_history.csv
+   44  awk '/serdar/ {print $1,$9}' event_history.csv
+   45  vi fruits.txt
+   46  cat fruits.txt
+   47  cat fruits.txt | grep k.k
+   48  k..k
+   49  cat fruits.txt | grep k..k
+   50  cat fruits.txt | grep ^b
+   51  cat fruits.txt | grep y?
+   52  cat fruits.txt | grep y$
+   53  cat fruits.txt | grep k[ae]k
+   54  cat fruits.txt | grep k[a-z]k
+   55  cat fruits.txt | grep -i k[a-z]k
+   56  cat fruits.txt | grep -i k[0-9]k
+   57  cat fruits.txt | grep -i k[a-z0-9]k
+   58  cat event_history.txt | grep "serdar" | grep -i "terminate" | grep -Eo "i-.{17}"
+   59  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -Eo "i-.{17}"
+   60  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -io "i-[a-z0-9]{17}"
+   61  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -Eio "i-[a-z0-9]{17}"
+   62  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -io "i-\{17\}"
+   63  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -io "i-[a-z0-9]{17}"
+   64  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -Eio "i-[a-z0-9]{17}"
+   65  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -Eo "i-[a-zA-Z0-9]{17}"
+   66  cat event_history.csv \| grep "serdar" | grep -i "terminate" | grep -Eo "i-[a-zA-Z0-9]{17}" | sort | uniq > result.txt
+   67  cat event_history.csv /| grep "serdar" | grep -i "terminate" | grep -Eo "i-[a-zA-Z0-9]{17}" | sort | uniq > result.txt
+   68  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -Eo "i-[a-zA-Z0-9]{17}" | sort | uniq > result.txt
+   69  cat result.txt
+   70  cat fruits.txt
+   71  cat fruits.txt grep -E "s.{9}"
+   72  cat fruits.txt | grep -E "s.{9}"
+   73  cat fruits.txt | grep -E ".{10}"
+   74  cat evet_history.csv | gerp "serdar" | grep "terminate" | grep -Eio "i-.{17}
+   75  cat evet_history.csv | gerp "serdar" | grep "terminate" | grep -Eio "i-.{17}"
+   76  cat event_history.csv | gerp "serdar" | grep "terminate" | grep -Eio "i-.{17}"
+   77  cat event_history.csv | grep "serdar" | grep "terminate" | grep -Eio "i-.{17}"
+   78  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -Eio "i-.{17}"
+   79  cat event_history.csv | grep "serdar" | grep -i "terminate" | grep -Eo "i-[a-zA-Z0-9]{17}" | sort | uniq > result.txt
+   80  ls
+   81  tar cvzf mypro.tgz Project-101
+   82  ls
+   83  #/home/ec2-user/data, /etc, /boot, /usr 
+   84  backup_files="/home/ec2-user/data /etc /boot /usr" 
+   85  destination="/mnt/backup"
+   86  sudo history > history.txt
+   87  history > history.txt

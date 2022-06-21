@@ -68,6 +68,17 @@ At the end of the this hands-on training, students will be able to;
 - commit your code and push it to your GitHub repo
 
 - Launch an Instance and pull your files in to it
+   -sudo yum update -y
+   -sudo pip3 install flask
+   -sudo pip3 install flask-mysql
+   -sudo pip3 install sqlalchemy
+   -sudo pip3 install Flask=SQLAlchemy
+   -sudo yum install git -y
+   -sudo git clone [githuprepoURL]
+   -cd myprojects/python/hands-on/flask-05.....
+   -sudo python3 app-with-mysql.py
+   -Now take your instance's DNS and see on the browser.   
+
 
 - Run your application on EC2
 
